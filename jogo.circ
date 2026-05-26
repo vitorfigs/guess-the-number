@@ -72,6 +72,11 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
+    <comp lib="0" loc="(2050,490)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="0" loc="(420,50)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
@@ -137,6 +142,19 @@
     <comp lib="1" loc="(1070,2870)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
+    </comp>
+    <comp lib="1" loc="(2130,490)" name="NOT Gate">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(2330,210)" name="AND Gate">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(2330,400)" name="AND Gate">
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="1" loc="(2580,300)" name="OR Gate">
+      <a name="size" val="70"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="1" loc="(880,1250)" name="NOT Gate">
       <a name="size" val="20"/>
@@ -240,147 +258,155 @@
     <comp lib="1" loc="(950,450)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="2" loc="(2040,290)" name="Multiplexer">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="8" loc="(1003,2237)" name="Text">
+    <comp lib="8" loc="(1000,2235)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 3 PARA (A - B)"/>
     </comp>
-    <comp lib="8" loc="(1003,2627)" name="Text">
+    <comp lib="8" loc="(1000,2625)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 3 PARA (B-A)"/>
     </comp>
-    <comp lib="8" loc="(1076,190)" name="Text">
+    <comp lib="8" loc="(1075,190)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 0 (A - B)"/>
+    </comp>
+    <comp lib="8" loc="(1080,270)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="BOUT"/>
     </comp>
     <comp lib="8" loc="(1080,380)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 0 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1081,270)" name="Text">
+    <comp lib="8" loc="(1080,460)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
     </comp>
-    <comp lib="8" loc="(1083,463)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="BOUT"/>
-    </comp>
-    <comp lib="8" loc="(1089,47)" name="Text">
+    <comp lib="8" loc="(1085,45)" name="Text">
       <a name="text" val="DESCOBRIR COMO FAZER GERAR UM NUMERO ALEATORIO DEPOIS QUE ACERTAR"/>
     </comp>
-    <comp lib="8" loc="(1093,694)" name="Text">
+    <comp lib="8" loc="(1090,690)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 1 (A - B)"/>
     </comp>
-    <comp lib="8" loc="(1095,1231)" name="Text">
+    <comp lib="8" loc="(1095,1230)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
     </comp>
-    <comp lib="8" loc="(1095,861)" name="Text">
+    <comp lib="8" loc="(1095,860)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
     </comp>
-    <comp lib="8" loc="(1105,1063)" name="Text">
+    <comp lib="8" loc="(1105,1060)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 1 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1105,1671)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="BOUT"/>
-    </comp>
-    <comp lib="8" loc="(1106,1501)" name="Text">
+    <comp lib="8" loc="(1105,1500)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 2 (A - B)"/>
     </comp>
-    <comp lib="8" loc="(1114,1894)" name="Text">
+    <comp lib="8" loc="(1105,1670)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="BOUT"/>
+    </comp>
+    <comp lib="8" loc="(1110,1890)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 2 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1115,2061)" name="Text">
+    <comp lib="8" loc="(1115,2060)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
     </comp>
-    <comp lib="8" loc="(1124,2694)" name="Text">
+    <comp lib="8" loc="(1120,2690)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 3 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1125,2471)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="BOUT"/>
-    </comp>
-    <comp lib="8" loc="(1126,2301)" name="Text">
+    <comp lib="8" loc="(1125,2300)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 3 (A - B)"/>
     </comp>
-    <comp lib="8" loc="(1189,2860)" name="Text">
+    <comp lib="8" loc="(1125,2470)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="BOUT"/>
+    </comp>
+    <comp lib="8" loc="(1185,2860)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT FINAL SEM USO (EM ANÁLISE)´"/>
     </comp>
-    <comp lib="8" loc="(1670,366)" name="Text">
+    <comp lib="8" loc="(1670,365)" name="Text">
       <a name="text" val="Distribuidos (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1679,166)" name="Text">
+    <comp lib="8" loc="(1675,165)" name="Text">
       <a name="text" val="Ditribuidor (A-B)"/>
     </comp>
-    <comp lib="8" loc="(516,2245)" name="Text">
+    <comp lib="8" loc="(2134,517)" name="Text">
+      <a name="font" val="SansSerif bold 13"/>
+      <a name="text" val="Transformando o Bout "/>
+    </comp>
+    <comp lib="8" loc="(2134,536)" name="Text">
+      <a name="font" val="SansSerif bold 13"/>
+      <a name="text" val="em um número 4 bits"/>
+    </comp>
+    <comp lib="8" loc="(2413,154)" name="Text">
+      <a name="text" val="MULTIPLEXADOR (2X1)"/>
+    </comp>
+    <comp lib="8" loc="(515,2245)" name="Text">
       <a name="text" val="BIT 3 (B)"/>
     </comp>
-    <comp lib="8" loc="(516,2267)" name="Text">
+    <comp lib="8" loc="(515,2265)" name="Text">
       <a name="text" val="BIT 3 (A)"/>
     </comp>
-    <comp lib="8" loc="(525,1443)" name="Text">
+    <comp lib="8" loc="(525,1440)" name="Text">
       <a name="text" val="BIT 2 (B)"/>
     </comp>
     <comp lib="8" loc="(525,1465)" name="Text">
       <a name="text" val="BIT 2 (A)"/>
     </comp>
-    <comp lib="8" loc="(528,660)" name="Text">
-      <a name="text" val="BIT 1 (A)"/>
-    </comp>
-    <comp lib="8" loc="(529,626)" name="Text">
+    <comp lib="8" loc="(525,625)" name="Text">
       <a name="text" val="BIT 1 (B)"/>
     </comp>
-    <comp lib="8" loc="(538,171)" name="Text">
+    <comp lib="8" loc="(525,660)" name="Text">
+      <a name="text" val="BIT 1 (A)"/>
+    </comp>
+    <comp lib="8" loc="(535,170)" name="Text">
       <a name="text" val="BIT 0 (B)"/>
     </comp>
-    <comp lib="8" loc="(539,205)" name="Text">
+    <comp lib="8" loc="(535,205)" name="Text">
       <a name="text" val="BIT 0 (A)"/>
     </comp>
-    <comp lib="8" loc="(810,953)" name="Text">
+    <comp lib="8" loc="(810,950)" name="Text">
       <a name="text" val="B.I. BIT 1 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(822,1364)" name="Text">
+    <comp lib="8" loc="(820,1360)" name="Text">
       <a name="text" val="B.I. BIT 2 (A - B)"/>
     </comp>
-    <comp lib="8" loc="(832,1775)" name="Text">
+    <comp lib="8" loc="(830,1775)" name="Text">
       <a name="text" val="B.I. BIT 2 (B - A)"/>
     </comp>
-    <comp lib="8" loc="(839,535)" name="Text">
+    <comp lib="8" loc="(835,535)" name="Text">
       <a name="text" val="B.I. BIT 1 (A - B)"/>
     </comp>
-    <comp lib="8" loc="(955,161)" name="Text">
+    <comp lib="8" loc="(955,160)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 0 PARA (A - B)"/>
     </comp>
-    <comp lib="8" loc="(957,351)" name="Text">
+    <comp lib="8" loc="(955,350)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 0 PARA (B - A)"/>
     </comp>
-    <comp lib="8" loc="(968,603)" name="Text">
+    <comp lib="8" loc="(965,600)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 1 PARA (A - B)"/>
     </comp>
-    <comp lib="8" loc="(973,997)" name="Text">
+    <comp lib="8" loc="(970,995)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 1 PARA (B-A)"/>
     </comp>
-    <comp lib="8" loc="(983,1437)" name="Text">
+    <comp lib="8" loc="(980,1435)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 2 PARA (A - B)"/>
     </comp>
-    <comp lib="8" loc="(993,1827)" name="Text">
+    <comp lib="8" loc="(990,1825)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 2 PARA (B-A)"/>
     </comp>
@@ -418,15 +444,31 @@
     <wire from="(1530,410)" to="(1840,410)"/>
     <wire from="(1550,420)" to="(1550,2700)"/>
     <wire from="(1550,420)" to="(1840,420)"/>
-    <wire from="(1860,190)" to="(1910,190)"/>
-    <wire from="(1860,380)" to="(1910,380)"/>
-    <wire from="(1910,190)" to="(1910,280)"/>
-    <wire from="(1910,280)" to="(2010,280)"/>
-    <wire from="(1910,300)" to="(1910,380)"/>
-    <wire from="(1910,300)" to="(2010,300)"/>
-    <wire from="(2020,310)" to="(2020,2480)"/>
-    <wire from="(2040,290)" to="(2050,290)"/>
-    <wire from="(2050,100)" to="(2050,290)"/>
+    <wire from="(1860,190)" to="(2280,190)"/>
+    <wire from="(1860,380)" to="(2280,380)"/>
+    <wire from="(2020,500)" to="(2020,510)"/>
+    <wire from="(2020,500)" to="(2030,500)"/>
+    <wire from="(2020,510)" to="(2020,520)"/>
+    <wire from="(2020,510)" to="(2030,510)"/>
+    <wire from="(2020,520)" to="(2020,530)"/>
+    <wire from="(2020,520)" to="(2030,520)"/>
+    <wire from="(2020,530)" to="(2020,2480)"/>
+    <wire from="(2020,530)" to="(2030,530)"/>
+    <wire from="(2050,490)" to="(2060,490)"/>
+    <wire from="(2060,420)" to="(2060,490)"/>
+    <wire from="(2060,420)" to="(2280,420)"/>
+    <wire from="(2060,490)" to="(2100,490)"/>
+    <wire from="(2130,490)" to="(2190,490)"/>
+    <wire from="(2190,230)" to="(2190,490)"/>
+    <wire from="(2190,230)" to="(2280,230)"/>
+    <wire from="(2330,210)" to="(2440,210)"/>
+    <wire from="(2330,400)" to="(2440,400)"/>
+    <wire from="(2440,210)" to="(2440,280)"/>
+    <wire from="(2440,280)" to="(2510,280)"/>
+    <wire from="(2440,320)" to="(2440,400)"/>
+    <wire from="(2440,320)" to="(2510,320)"/>
+    <wire from="(2580,300)" to="(2660,300)"/>
+    <wire from="(2660,100)" to="(2660,300)"/>
     <wire from="(420,50)" to="(420,70)"/>
     <wire from="(420,70)" to="(450,70)"/>
     <wire from="(460,2280)" to="(570,2280)"/>
@@ -507,7 +549,7 @@
     <wire from="(720,550)" to="(1280,550)"/>
     <wire from="(720,550)" to="(720,720)"/>
     <wire from="(720,720)" to="(790,720)"/>
-    <wire from="(730,100)" to="(2050,100)"/>
+    <wire from="(730,100)" to="(2660,100)"/>
     <wire from="(730,2190)" to="(1450,2190)"/>
     <wire from="(730,2190)" to="(730,2330)"/>
     <wire from="(730,2330)" to="(1010,2330)"/>

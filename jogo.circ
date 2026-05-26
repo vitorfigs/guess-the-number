@@ -109,32 +109,32 @@
     <comp lib="1" loc="(1010,390)" name="XOR Gate"/>
     <comp lib="1" loc="(1010,470)" name="AND Gate"/>
     <comp lib="1" loc="(1040,1070)" name="XOR Gate"/>
+    <comp lib="1" loc="(1040,1240)" name="OR Gate">
+      <a name="inputs" val="3"/>
+      <a name="size" val="70"/>
+    </comp>
     <comp lib="1" loc="(1040,700)" name="XOR Gate"/>
-    <comp lib="1" loc="(1050,1240)" name="XOR Gate">
+    <comp lib="1" loc="(1040,870)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
     <comp lib="1" loc="(1050,1510)" name="XOR Gate"/>
-    <comp lib="1" loc="(1050,870)" name="XOR Gate">
-      <a name="inputs" val="3"/>
-      <a name="size" val="70"/>
-    </comp>
-    <comp lib="1" loc="(1060,1680)" name="XOR Gate">
+    <comp lib="1" loc="(1050,1680)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
     <comp lib="1" loc="(1060,1900)" name="XOR Gate"/>
-    <comp lib="1" loc="(1070,2070)" name="XOR Gate">
+    <comp lib="1" loc="(1060,2070)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
     <comp lib="1" loc="(1070,2310)" name="XOR Gate"/>
-    <comp lib="1" loc="(1070,2700)" name="XOR Gate"/>
-    <comp lib="1" loc="(1080,2480)" name="XOR Gate">
+    <comp lib="1" loc="(1070,2480)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="1" loc="(1080,2870)" name="XOR Gate">
+    <comp lib="1" loc="(1070,2700)" name="XOR Gate"/>
+    <comp lib="1" loc="(1070,2870)" name="OR Gate">
       <a name="inputs" val="3"/>
       <a name="size" val="70"/>
     </comp>
@@ -389,17 +389,17 @@
     <wire from="(1010,390)" to="(1840,390)"/>
     <wire from="(1010,470)" to="(1260,470)"/>
     <wire from="(1040,1070)" to="(1510,1070)"/>
+    <wire from="(1040,1240)" to="(1340,1240)"/>
     <wire from="(1040,700)" to="(1390,700)"/>
-    <wire from="(1050,1240)" to="(1340,1240)"/>
+    <wire from="(1040,870)" to="(1370,870)"/>
     <wire from="(1050,1510)" to="(1410,1510)"/>
-    <wire from="(1050,870)" to="(1370,870)"/>
-    <wire from="(1060,1680)" to="(1450,1680)"/>
+    <wire from="(1050,1680)" to="(1450,1680)"/>
     <wire from="(1060,1900)" to="(1530,1900)"/>
-    <wire from="(1070,2070)" to="(1410,2070)"/>
+    <wire from="(1060,2070)" to="(1410,2070)"/>
     <wire from="(1070,2310)" to="(1430,2310)"/>
+    <wire from="(1070,2480)" to="(2020,2480)"/>
     <wire from="(1070,2700)" to="(1550,2700)"/>
-    <wire from="(1080,2480)" to="(2020,2480)"/>
-    <wire from="(1080,2870)" to="(1300,2870)"/>
+    <wire from="(1070,2870)" to="(1300,2870)"/>
     <wire from="(1260,470)" to="(1260,960)"/>
     <wire from="(1280,280)" to="(1280,550)"/>
     <wire from="(1340,1240)" to="(1340,1780)"/>
@@ -437,10 +437,10 @@
     <wire from="(480,90)" to="(480,670)"/>
     <wire from="(490,220)" to="(720,220)"/>
     <wire from="(490,90)" to="(490,220)"/>
-    <wire from="(570,2280)" to="(570,2670)"/>
+    <wire from="(570,2280)" to="(570,2630)"/>
     <wire from="(570,2280)" to="(600,2280)"/>
-    <wire from="(570,2670)" to="(570,2830)"/>
-    <wire from="(570,2670)" to="(860,2670)"/>
+    <wire from="(570,2630)" to="(570,2830)"/>
+    <wire from="(570,2630)" to="(860,2630)"/>
     <wire from="(570,2830)" to="(570,2930)"/>
     <wire from="(570,2830)" to="(910,2830)"/>
     <wire from="(570,2930)" to="(910,2930)"/>
@@ -483,10 +483,10 @@
     <wire from="(650,1280)" to="(860,1280)"/>
     <wire from="(650,630)" to="(650,1040)"/>
     <wire from="(650,630)" to="(770,630)"/>
-    <wire from="(660,2240)" to="(660,2630)"/>
+    <wire from="(660,2240)" to="(660,2670)"/>
     <wire from="(660,2240)" to="(860,2240)"/>
-    <wire from="(660,2630)" to="(660,2880)"/>
-    <wire from="(660,2630)" to="(860,2630)"/>
+    <wire from="(660,2670)" to="(660,2880)"/>
+    <wire from="(660,2670)" to="(860,2670)"/>
     <wire from="(660,2880)" to="(660,2910)"/>
     <wire from="(660,2880)" to="(890,2880)"/>
     <wire from="(660,2910)" to="(890,2910)"/>

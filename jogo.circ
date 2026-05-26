@@ -58,9 +58,9 @@
     <a name="simulationFrequency" val="1.0"/>
   </circuit>
   <circuit name="circuito_diferenca">
-    <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="circuito_diferenca"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelfont" val="SansSerif bold 15"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1860,190)" name="Splitter">
       <a name="facing" val="west"/>
@@ -95,6 +95,13 @@
       <a name="facing" val="south"/>
       <a name="label" val="ESCOLHA_CPU_B"/>
       <a name="labelfont" val="SansSerif bolditalic 12"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(740,80)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="DISTANCIA"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="1" loc="(1000,200)" name="XOR Gate"/>
@@ -233,6 +240,9 @@
     <comp lib="1" loc="(950,450)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
+    <comp lib="2" loc="(2040,290)" name="Multiplexer">
+      <a name="width" val="4"/>
+    </comp>
     <comp lib="8" loc="(1003,2237)" name="Text">
       <a name="font" val="SansSerif bold 15"/>
       <a name="text" val="BIT 3 PARA (A - B)"/>
@@ -256,6 +266,9 @@
     <comp lib="8" loc="(1083,463)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
+    </comp>
+    <comp lib="8" loc="(1089,47)" name="Text">
+      <a name="text" val="DESCOBRIR COMO FAZER GERAR UM NUMERO ALEATORIO DEPOIS QUE ACERTAR"/>
     </comp>
     <comp lib="8" loc="(1093,694)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
@@ -297,19 +310,19 @@
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="BOUT"/>
     </comp>
-    <comp lib="8" loc="(1125,2861)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="BOUT"/>
-    </comp>
     <comp lib="8" loc="(1126,2301)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DIFF 3 (A - B)"/>
     </comp>
+    <comp lib="8" loc="(1189,2860)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="BOUT FINAL SEM USO (EM ANÁLISE)´"/>
+    </comp>
     <comp lib="8" loc="(1670,366)" name="Text">
       <a name="text" val="Distribuidos (B - A)"/>
     </comp>
-    <comp lib="8" loc="(1672,174)" name="Text">
-      <a name="text" val="Distribuidor (A - B)"/>
+    <comp lib="8" loc="(1679,166)" name="Text">
+      <a name="text" val="Ditribuidor (A-B)"/>
     </comp>
     <comp lib="8" loc="(516,2245)" name="Text">
       <a name="text" val="BIT 3 (B)"/>
@@ -385,8 +398,8 @@
     <wire from="(1070,2070)" to="(1410,2070)"/>
     <wire from="(1070,2310)" to="(1430,2310)"/>
     <wire from="(1070,2700)" to="(1550,2700)"/>
-    <wire from="(1080,2480)" to="(1190,2480)"/>
-    <wire from="(1080,2870)" to="(1190,2870)"/>
+    <wire from="(1080,2480)" to="(2020,2480)"/>
+    <wire from="(1080,2870)" to="(1300,2870)"/>
     <wire from="(1260,470)" to="(1260,960)"/>
     <wire from="(1280,280)" to="(1280,550)"/>
     <wire from="(1340,1240)" to="(1340,1780)"/>
@@ -405,6 +418,15 @@
     <wire from="(1530,410)" to="(1840,410)"/>
     <wire from="(1550,420)" to="(1550,2700)"/>
     <wire from="(1550,420)" to="(1840,420)"/>
+    <wire from="(1860,190)" to="(1910,190)"/>
+    <wire from="(1860,380)" to="(1910,380)"/>
+    <wire from="(1910,190)" to="(1910,280)"/>
+    <wire from="(1910,280)" to="(2010,280)"/>
+    <wire from="(1910,300)" to="(1910,380)"/>
+    <wire from="(1910,300)" to="(2010,300)"/>
+    <wire from="(2020,310)" to="(2020,2480)"/>
+    <wire from="(2040,290)" to="(2050,290)"/>
+    <wire from="(2050,100)" to="(2050,290)"/>
     <wire from="(420,50)" to="(420,70)"/>
     <wire from="(420,70)" to="(450,70)"/>
     <wire from="(460,2280)" to="(570,2280)"/>
@@ -485,6 +507,7 @@
     <wire from="(720,550)" to="(1280,550)"/>
     <wire from="(720,550)" to="(720,720)"/>
     <wire from="(720,720)" to="(790,720)"/>
+    <wire from="(730,100)" to="(2050,100)"/>
     <wire from="(730,2190)" to="(1450,2190)"/>
     <wire from="(730,2190)" to="(730,2330)"/>
     <wire from="(730,2330)" to="(1010,2330)"/>
@@ -492,6 +515,8 @@
     <wire from="(730,2420)" to="(730,2470)"/>
     <wire from="(730,2420)" to="(910,2420)"/>
     <wire from="(730,2470)" to="(910,2470)"/>
+    <wire from="(730,80)" to="(730,100)"/>
+    <wire from="(730,80)" to="(740,80)"/>
     <wire from="(740,1090)" to="(740,1180)"/>
     <wire from="(740,1090)" to="(980,1090)"/>
     <wire from="(740,1180)" to="(740,1230)"/>

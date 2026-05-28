@@ -56,13 +56,13 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,310)" name="Pin">
+    <comp lib="0" loc="(180,290)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="USER_A"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(190,420)" name="Pin">
+    <comp lib="0" loc="(180,450)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="CPU_B"/>
       <a name="labelfont" val="SansSerif bold 10"/>
@@ -77,36 +77,26 @@
       <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
-    <comp loc="(350,310)" name="circuito_diferenca">
-      <a name="label" val="DIFF"/>
-      <a name="labelfont" val="SansSerif bold 10"/>
-    </comp>
-    <wire from="(190,310)" to="(320,310)"/>
-    <wire from="(190,340)" to="(190,420)"/>
-    <wire from="(190,340)" to="(300,340)"/>
-    <wire from="(300,320)" to="(300,340)"/>
-    <wire from="(300,320)" to="(320,320)"/>
+    <comp loc="(350,310)" name="circuito_diferenca"/>
+    <wire from="(180,290)" to="(260,290)"/>
+    <wire from="(180,450)" to="(210,450)"/>
+    <wire from="(210,330)" to="(210,450)"/>
+    <wire from="(210,330)" to="(260,330)"/>
     <wire from="(350,310)" to="(470,310)"/>
   </circuit>
   <circuit name="circuito_diferenca">
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="circuito_diferenca"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="clabelfont" val="SansSerif bold 15"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
-      <rect height="4" stroke="none" width="10" x="50" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="64">ESCOLHA_C...</text>
-      <rect height="4" stroke="none" width="10" x="50" y="78"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="start" x="65" y="84">ESCOLHA_U...</text>
-      <rect height="4" stroke="none" width="10" x="260" y="58"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Courier 10 Pitch" font-size="12" text-anchor="end" x="255" y="64">DISTANCIA</text>
-      <rect height="20" stroke="none" width="200" x="60" y="90"/>
-      <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
-      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Courier 10 Pitch" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="104">circuito_diferenca</text>
-      <circ-anchor facing="east" x="270" y="60"/>
-      <circ-port dir="in" pin="390,30" x="50" y="60"/>
-      <circ-port dir="in" pin="390,70" x="50" y="80"/>
-      <circ-port dir="out" pin="740,80" x="270" y="60"/>
+      <rect fill="none" height="60" stroke="#000000" width="90" x="40" y="20"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="35" text-anchor="middle" x="84" y="52">D</text>
+      <circ-anchor facing="east" x="130" y="50"/>
+      <circ-port dir="in" pin="390,30" x="40" y="30"/>
+      <circ-port dir="in" pin="390,70" x="40" y="70"/>
+      <circ-port dir="out" pin="740,80" x="130" y="50"/>
     </appear>
     <comp lib="0" loc="(1860,190)" name="Splitter">
       <a name="facing" val="west"/>
@@ -388,7 +378,7 @@
       <a name="font" val="SansSerif bold 13"/>
       <a name="text" val="em um número 4 bits"/>
     </comp>
-    <comp lib="8" loc="(225,16)" name="Text">
+    <comp lib="8" loc="(225,15)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="DESCOBRIR COMO FAZER GERAR UM NUMERO ALEATORIO DEPOIS QUE ACERTAR"/>
     </comp>

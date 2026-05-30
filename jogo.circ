@@ -56,19 +56,24 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(140,290)" name="Pin">
+    <comp lib="0" loc="(160,250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CONFIRMAR"/>
+      <a name="labelfont" val="SansSerif bold 15"/>
+    </comp>
+    <comp lib="0" loc="(160,300)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="USER_A"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(140,450)" name="Pin">
+    <comp lib="0" loc="(160,440)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="CPU_B"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(470,310)" name="Pin">
+    <comp lib="0" loc="(480,310)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="RESULT"/>
@@ -77,12 +82,37 @@
       <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(650,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="ACERTO"/>
+      <a name="labelfont" val="SansSerif bolditalic 12"/>
+      <a name="labelloc" val="north"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(650,100)" name="AND Gate">
+      <a name="facing" val="north"/>
+    </comp>
     <comp loc="(340,310)" name="circuito_diferenca"/>
-    <wire from="(140,290)" to="(250,290)"/>
-    <wire from="(140,450)" to="(190,450)"/>
-    <wire from="(190,330)" to="(190,450)"/>
-    <wire from="(190,330)" to="(250,330)"/>
-    <wire from="(340,310)" to="(470,310)"/>
+    <comp loc="(480,440)" name="circuito_comparador">
+      <a name="label" val="COMPARA"/>
+      <a name="labelfont" val="SansSerif bolditalic 12"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <wire from="(160,250)" to="(630,250)"/>
+    <wire from="(160,300)" to="(230,300)"/>
+    <wire from="(160,440)" to="(210,440)"/>
+    <wire from="(210,320)" to="(210,440)"/>
+    <wire from="(210,320)" to="(270,320)"/>
+    <wire from="(210,440)" to="(260,440)"/>
+    <wire from="(230,300)" to="(230,460)"/>
+    <wire from="(230,300)" to="(270,300)"/>
+    <wire from="(230,460)" to="(260,460)"/>
+    <wire from="(340,310)" to="(480,310)"/>
+    <wire from="(480,440)" to="(670,440)"/>
+    <wire from="(630,150)" to="(630,250)"/>
+    <wire from="(650,80)" to="(650,100)"/>
+    <wire from="(670,150)" to="(670,440)"/>
   </circuit>
   <circuit name="circuito_diferenca">
     <a name="appearance" val="custom"/>
@@ -94,8 +124,8 @@
       <rect fill="none" height="41" stroke="#000000" stroke-width="3" width="70" x="40" y="39"/>
       <text dominant-baseline="central" font-family="Standard Symbols PS" font-size="30" font-style="italic" font-weight="bold" text-anchor="middle" x="74" y="60">D</text>
       <circ-anchor facing="east" x="110" y="60"/>
-      <circ-port dir="in" pin="280,100" x="40" y="70"/>
-      <circ-port dir="in" pin="280,60" x="40" y="50"/>
+      <circ-port dir="in" pin="280,100" x="40" y="50"/>
+      <circ-port dir="in" pin="280,60" x="40" y="70"/>
       <circ-port dir="out" pin="630,110" x="110" y="60"/>
     </appear>
     <comp lib="0" loc="(1750,220)" name="Splitter">
@@ -722,6 +752,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="circuito_comparador"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="clabelup" val="north"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
       <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="50" x="50" y="50"/>
@@ -769,27 +800,27 @@
       <a name="inputs" val="4"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="8" loc="(560,154)" name="Text">
+    <comp lib="8" loc="(560,150)" name="Text">
       <a name="font" val="Serif bold 10"/>
       <a name="text" val="COMPARA BIT 0"/>
     </comp>
-    <comp lib="8" loc="(561,316)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="COMPARA BIT 2"/>
-    </comp>
-    <comp lib="8" loc="(561,394)" name="Text">
-      <a name="font" val="SansSerif bold 10"/>
-      <a name="text" val="COMPARA BIT 3"/>
-    </comp>
-    <comp lib="8" loc="(563,235)" name="Text">
+    <comp lib="8" loc="(560,235)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="COMPARA BIT 1"/>
     </comp>
-    <comp lib="8" loc="(744,246)" name="Text">
+    <comp lib="8" loc="(560,315)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="COMPARA BIT 2"/>
+    </comp>
+    <comp lib="8" loc="(560,390)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="COMPARA BIT 3"/>
+    </comp>
+    <comp lib="8" loc="(740,245)" name="Text">
       <a name="font" val="Serif bold 8"/>
       <a name="text" val="COMPARA TODO"/>
     </comp>
-    <comp lib="8" loc="(746,261)" name="Text">
+    <comp lib="8" loc="(745,260)" name="Text">
       <a name="font" val="Serif bold 8"/>
       <a name="text" val="O NÚMERO"/>
     </comp>

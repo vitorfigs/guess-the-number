@@ -11,26 +11,40 @@ Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvo
 | :--- | :--- |
 | 24/05 | Planejamento e organização do projeto|
 | 25/05 | Início da implementação do subcircuito `circuito_diferenca`. |
+| 28/05 | Início da implementação do subcircuito `circuito_comparador`. |
 
-## - Subcircuitos 1/4...
+## - Subcircuitos 2/4...
 
-### I. Circuito "Diferença" (...)
+### I. Circuito "Diferença"
 
 * **Objetivo:** Calcular a distância $|A - B|$ entre o chute do usuário e a resposta.
    
 * **Componentes:**  
     * 2 subtratores de 4 bits feitos manualmente, um para A-B, outro para B-A.
-    * 1 Multiplexador (MUX) 2x1 para seleção do resultado positivo $|A - B|$.
-    * 3 pinos: Escolha do Usuário, da CPU e Resposta.
+    * 1 Multiplexador (MUX) manual 2x1 para seleção do resultado positivo $|A - B|$.
+    * 3 pinos: Escolha do Usuário, da CPU e Distância.
         
 * **Desafios/Bugs**
    * Implementação manual dos subtratores.
    * Falha na lógica de Borrow-out.
    * Inversão dos BITS no Distribuidor.
-  
 
-### II. Circuito Comparador (Não iniciado)
+<br>
+<br>
 
+### II. Circuito "Comparador" (...)
+
+* **Objetivo:** Verificar a possível igualdade entre o número A _(chute do usuário)_ e B _(resposta)_.
+   
+* **Componentes:**
+  * 1 Comparador de identidade de 4 bits.
+  * 3 pinos: Escolha do Usuário, da CPU e bool da igualdade entre A e B.
+        
+* **Desafios/Bugs**
+    <p>$$\Huge\emptyset$$</p>
+    
+<br>
+<br>
 
 ### III. Circuito “Cores” (Não iniciado)
 

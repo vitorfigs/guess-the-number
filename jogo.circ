@@ -76,7 +76,7 @@
     <comp lib="0" loc="(480,310)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="RESULT"/>
+      <a name="label" val="resultado"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="labelloc" val="east"/>
       <a name="type" val="output"/>
@@ -93,7 +93,9 @@
     <comp lib="1" loc="(650,100)" name="AND Gate">
       <a name="facing" val="north"/>
     </comp>
-    <comp loc="(340,310)" name="circuito_diferenca"/>
+    <comp loc="(340,310)" name="circuito_diferenca">
+      <a name="label" val="DIFF"/>
+    </comp>
     <comp loc="(480,440)" name="circuito_comparador">
       <a name="label" val="COMPARA"/>
       <a name="labelfont" val="SansSerif bolditalic 12"/>

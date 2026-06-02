@@ -5,6 +5,15 @@
 ## Sobre o projeto
 Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvolvido no **Logisim**. O circuito avalia o palpite do jogador, calcula a distância em relação ao valor correto e fornece a distância baseada na intensidade das cores **vermelha** (perto) e **azul** (longe).  
 
+## Visão Geral
+<details>
+  <summary><a href="#circuito-main">Clique para abrir a visão geral do circuito</a></summary>
+  <br>
+  <div align="center">
+    <img src="./img/main.png" alt="Circuito Principal" width="65%">
+  </div>
+</details>
+
 
   ## 📅 Desenvolvimento
 | Data | Atividade |
@@ -29,6 +38,13 @@ Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvo
    * Falha na lógica de Borrow-out.
    * Inversão dos BITS no Distribuidor.
 
+<details>
+  <summary><a href="#diferenca">Clique para abrir a imagem do Subcircuito Diferenca</a></summary>
+  <br>
+  
+  ![Circuito Diferença](./img/circuito_diferenca.svg)
+</details>
+
 <br>
 <br>
 
@@ -42,6 +58,13 @@ Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvo
         
 * **Desafios/Bugs**
     <p>$$\Huge\emptyset$$</p>
+
+<details>
+  <summary><a href="#comparador">Clique para abrir a imagem do Subcircuito Comparador</a></summary>
+  <br>
+
+  ![Circuito Comparador](./img/circuito_comparador.svg)
+</details>
     
 <br>
 <br>

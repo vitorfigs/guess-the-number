@@ -3,7 +3,10 @@
 **Disciplina:** Circuitos Digitais | **UFCA** - Universidade Federal do Cariri | **Professor:** Ramon Nepomuceno
 
 ## Sobre o projeto
-Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvolvido no **Logisim**. O circuito avalia o palpite do jogador, calcula a distância em relação ao valor correto e fornece a distância baseada na intensidade das cores **vermelha** (perto) e **azul** (longe).  
+Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvolvido no **Logisim**. O circuito avalia o palpite do jogador, calcula a distância em relação ao valor correto e fornece a distância baseada em 4 leds azuis que, lendo em binário, é possível identificar o módulo.  
+
+
+
 
 ## Visão Geral
 <details>
@@ -23,8 +26,10 @@ Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvo
 | 28/05 | Início da implementação do circuito `circuito_comparador`. |
 | 07/06 | Implementação do circuito `circuito_cores`. |
 | 09/06 | Implementação do subcircuito `subcircuito_extensor`. |
+| 22/06 | Implementação do circuito `circuito_decoder`. |
+| 25/06 | Término do Projeto |
 
-## - Circuitos 3/4...
+## - Circuitos principais:
 
 ### I. Circuito "Diferença"
 
@@ -92,4 +97,23 @@ Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvo
 <br>
 <br>
 
-### IV. Decodificador para Display de 7 segmentos (Não iniciado)
+### IV. Decodificador para Display de 7 Segmentos
+
+* **Objetivo:** Receber o palpite em binário de 4 bits do jogador e convertê-lo para o símbolo hexadecimal correspondente, exibindo-o de forma legível em um display de 7 segmentos.
+   
+* **Componentes:**
+  * 1 Entrada de 4 bits (representando o valor do Chute).
+  * 7 Saídas de 1 bit (uma para cada segmento do display: `a, b, c, d, e, f, g`).
+  * Expressões booleanas simplificadas com Mapa de Karnaugh para mapear os caracteres de `0` a `F`.
+
+* **Desafios/Bugs:**
+  * Mapeamento correto de cada uma das 16 combinações binárias (0000 a 1111) para os respectivos segmentos acesos no Logisim.
+  * Leitura dos BITS de trás para frente
+ 
+
+<details>
+  <summary><a href="#decodificador">Clique para abrir a imagem do Subcircuito Decodificador</a></summary>
+  <br>
+
+  ![Circuito Decodificador](./img/circuito_decoder.svg)
+</details>

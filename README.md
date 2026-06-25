@@ -5,9 +5,10 @@
 ## Sobre o projeto
 Sistema de **adivinhação de números binários** aleatórios de 4 bits desenvolvido no **Logisim**. O circuito avalia o palpite do jogador, calcula a distância em relação ao valor correto e fornece a distância baseada em 4 leds azuis que, lendo em binário, é possível identificar o módulo.  
 
+## Demonstração do Projeto em Vídeo
+[video_main.webm](https://github.com/user-attachments/assets/65c618f9-7fac-444c-bf9c-1b524e084732)
 
-
-
+---
 ## Visão Geral
 <details>
   <summary><a href="#circuito-main">Clique para abrir a visão geral do circuito</a></summary>

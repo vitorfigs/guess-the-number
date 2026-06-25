@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 792 517">
+<svg style="background-color: #FFFFFF;" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 792 517">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
   <rect width="100%" height="100%" fill="white"/>
    <polyline fill="none" points="54,271 54,251 74,251" stroke="rgb(0, 0, 0)" stroke-linecap="square" stroke-width="4.0"/>
    <polyline fill="none" points="144,221 164,221" stroke="rgb(0, 0, 0)" stroke-linecap="square" stroke-width="3.0"/>
